@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState,useRef,useEffect } from "react";
 import { FaBars,  FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
+  const inputRef = useRef();
   
+  // const scrollHandler = _ => {
+  //   console.log(inputRef.current.getBoundingClientRect());
+  // };
+  // useEffect(() => {
+  //   window.addEventListener("scroll", scrollHandler, true);
+  //   return () => {
+  //     window.removeEventListener("scroll", scrollHandler, true);
+  //   };
+  // }, []);
   return (
-    <nav className=" "> 
+    <nav className=""> 
       <div className=" w-10/12 mx-auto py-6 lg:hidden">
         <div className={`flex   items-center justify-between  `}>
           <div className="flex  items-center ">
