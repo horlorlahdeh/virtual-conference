@@ -18,7 +18,8 @@ module.exports = {
       borderColor: theme => ({
         ...theme('colors'),
          DEFAULT: theme('colors.gray.300', 'currentColor'),
-        "purple-light": '#9046FE' 
+         "purple-main": '#6700FF' ,
+        "purple-light": '#9046FE'
         
        })
     },

@@ -3,7 +3,7 @@ import React from 'react'
 const Developer = () => {
     return (
         <section className="bg-black py-16">
-            <div className="border-purple-800 py-8 w-10/12 mx-auto border-4 lg:border-8 max-w-screen ">
+            <div className="border-purple-main py-8 w-10/12 mx-auto border-4 lg:border-8 max-w-screen bg-dots bg-repeat-round">
             <div className="text-white mt-12 lg:mt-0 flex flex-col items-center justify-center p-8">
                     <div className="h-24 w-24 md:h-32 md:w-32 lg:h-40 lg:w-40 border-radius overflow-hidden object-cover mb-6 ">
                         <img src="../images/about/Antonio french.jpg" alt="Antonio french" className=" " />

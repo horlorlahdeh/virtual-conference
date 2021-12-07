@@ -6,7 +6,7 @@ import Register from '../components/Register'
 const Contact = () => {
     return (
         <div className="">
-            <Navbar/>
+            <Navbar title="Virtual Conference Contact"/>
             <Hero/>
             {/* <Register/> */}
         </div>

@@ -1,25 +1,17 @@
 import React, { useState,useRef,useEffect } from "react";
 import { FaBars,  FaShoppingCart } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({title}) => {
   const [showMenu, setShowMenu] = useState(false);
   const inputRef = useRef();
   
-  // const scrollHandler = _ => {
-  //   console.log(inputRef.current.getBoundingClientRect());
-  // };
-  // useEffect(() => {
-  //   window.addEventListener("scroll", scrollHandler, true);
-  //   return () => {
-  //     window.removeEventListener("scroll", scrollHandler, true);
-  //   };
-  // }, []);
+  
   return (
     <nav className=""> 
       <div className=" w-10/12 mx-auto py-6 lg:hidden">
         <div className={`flex   items-center justify-between  `}>
           <div className="flex  items-center ">
-            <h1 className="text-2xl font-semibold">Virtual Conference About</h1>
+            <h1 className="text-2xl font-semibold">{title}</h1>
           </div>
 
           <div className="flex justify-end gap-x-4 mr-4">

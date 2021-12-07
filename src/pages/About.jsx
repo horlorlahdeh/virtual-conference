@@ -11,7 +11,7 @@ import VirtualBottom from '../components/about/VirtualBottom'
 const About = () => {
     return (
         <div>
-           <Navbar/>
+           <Navbar title="Virtual Conference About"/>
            <Hero/>
            <Virtual/> 
            <VirtualBottom/>
