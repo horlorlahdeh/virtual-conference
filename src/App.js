@@ -5,9 +5,9 @@ import Event from './pages/Event';
 function App() {
   return (
     <div className="">
-      <About/>
+      {/* <About/> */}
       {/* <Event/>  */}
-      {/* <Contact/> */}
+      <Contact/>
     </div>
   );
 }
