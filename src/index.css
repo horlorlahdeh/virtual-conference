@@ -3,28 +3,85 @@
 @tailwind components;
 @tailwind utilities;
 .hide {
-    display: none;
-  }
-  .show {
-    display: flex;
-  }
-  .border-b-links{
-      border-bottom: 0.1px solid rgb(203, 206, 204);
-      transition: all .5s;
-  }
-  .border-t{
-      border-top: 2px solid rgb(114, 167, 236);
-  }
-  .ul-nav{
-      transition: all ease-in;
-  }
-  .max-w-screen{
-      max-width: 1100px;
-  }
-  .border-radius{
-      border-radius: 50%;
-  }
+  display: none;
+}
+.show {
+  display: flex;
+}
+.border-b-links {
+  border-bottom: 0.1px solid rgb(203, 206, 204);
+  transition: all 0.5s;
+}
+.border-t {
+  border-top: 2px solid rgb(114, 167, 236);
+}
+.ul-nav {
+  transition: all ease-in;
+}
+.max-w-screen {
+  max-width: 1100px;
+}
+.border-radius {
+  border-radius: 50%;
+}
+.section-relative {
+  position: relative;
+}
+.about-rounded-yellow {
+  top: 2rem;
+  left: 20%;
+}
+.about-rounded-pink {
+  top: 50%;
+  right: 10rem;
+}
+.about-square-blue {
+  top: 50%;
+  left: 10rem;
+}
+.about-rounded-purple {
+  bottom: 2rem;
+  left: 25%;
+}
+.about-square-pink {
+  top: 3rem;
+  right: 40%;
+}
 
-
-
-
+@media screen and (min-width: 800px) {
+    .about-rounded-yellow {
+        top: 2rem;
+        left: 30%;
+      }
+      .about-rounded-purple {
+        bottom: 2rem;
+        left: 35%;
+      }
+}
+.virtual{
+    background:dot black;
+}
+.rounded-semi-full{
+    border-radius: 50%  50% 0 50%;
+}
+.w-144{
+    width: 36rem;
+}
+.w-screen-full{
+  width: 1536px;
+}
+.translate-x {
+  animation: bounce 0.2s ease-in-out normal;
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(0rem);
+  }
+ 
+  100% {
+    transform: translateX(1rem);
+  }
+}
+.rem{
+  top: 1.1rem;
+}
