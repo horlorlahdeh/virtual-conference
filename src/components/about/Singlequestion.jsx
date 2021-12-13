@@ -9,10 +9,10 @@ const handleText=(e)=>{
   
 }
     return (
-        <article className={`${text?"bg-pink-400 text-black":""} mb-6`}>
+        <article className={`${text?"bg-pink-400 text-black":""} mb-6 transition-all duration-1000`}>
          
-          <div className={`question-title flex justify-between items-center p-2   ${text?"text-black":"border-4 border-pink-400 text-pink-400"}`}>
-            <p>Duis aute irure dolor in reprehenderit?</p>
+          <div className={`question-title flex justify-between items-center p-2   ${text?"text-black":"border-8 border-pink-400 text-pink-400"}`}>
+            <p className="text-xl font-bold">Duis aute irure dolor in reprehenderit?</p>
             <button type="button" className="question-btn">
               <span className="plus-icon">
                 <FaPlus className={`${text?"hide":"show"}`} onClick={handleText} />
