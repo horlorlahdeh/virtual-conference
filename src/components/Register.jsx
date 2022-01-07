@@ -10,7 +10,7 @@ import {
 const Register = () => {
   
   return (
-    <section className="bg-purple-main py-20 bg-shapesRegisterMain bg-center bg-no-repeat">
+    <section className="bg-purple-main py-20 bg-shapesRegisterMain bg-center bg-no-repeat" id="register">
       <div className="flex   flex-col lg:flex-row lg:gap-x-12 lg:items-start w-10/12  mx-auto max-w-screen">
         <div className="  text-white flex flex-1 flex-col w-10/12 md:w-full items-center justify-center">
           <div className="bg-black hover:text-black hover:bg-pink-400 transition-all   px-4 py-8 md:p-8 w-full ">
