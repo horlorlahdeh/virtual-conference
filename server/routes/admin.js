@@ -22,7 +22,11 @@ router.post('/create', async (req, res) => {
     full_name: Joi.string().min(3).required(),
     username: Joi.string().alphanum().min(3).required(),
     password: Joi.string()
-      .pattern(new RegExp('^[a-zA-Z0-9]{3,30}$'))
+      .pattern(
+        new RegExp(
+          '^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$',
+        ),
+      )
       .required(),
     confirm_password: Joi.string().required().valid(Joi.ref('password')),
   });
