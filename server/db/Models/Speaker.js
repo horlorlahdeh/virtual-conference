@@ -18,6 +18,10 @@ const SpeakerSchema = new Schema({
     type: String,
     required: true,
   },
+  created_at: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 const SpeakerModel = mongoose.model('speaker', SpeakerSchema);

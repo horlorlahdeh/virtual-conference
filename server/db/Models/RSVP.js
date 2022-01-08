@@ -8,6 +8,10 @@ const RSVPSchema = new Schema({
     required: true,
     unique: true,
   },
+  created_at: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 const RSVPModel = mongoose.model('rsvp', RSVPSchema);

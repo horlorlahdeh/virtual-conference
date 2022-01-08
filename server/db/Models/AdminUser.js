@@ -20,6 +20,14 @@ const AdminUserSchema = new Schema({
     type: String,
     required: true,
   },
+  admin_level: {
+    type: Number,
+    default: 0,
+  },
+  created_at: {
+    type: Date,
+    default: Date.now,
+  },
 });
 
 const AdminUsersModel = mongoose.model('admin-user', AdminUserSchema);
