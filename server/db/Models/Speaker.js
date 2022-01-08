@@ -18,6 +18,10 @@ const SpeakerSchema = new Schema({
     type: String,
     required: true,
   },
+  published: {
+    type: Boolean,
+    default: true,
+  },
   created_at: {
     type: Date,
     default: Date.now,

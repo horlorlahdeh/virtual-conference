@@ -6,6 +6,10 @@ const SponsorSchema = new Schema({
   website: { type: String, required: true, unique: true },
   icon: { type: String, required: true },
   added_by: String,
+  published: {
+    type: Boolean,
+    default: true,
+  },
   created_at: {
     type: Date,
     default: Date.now,

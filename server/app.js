@@ -3,7 +3,7 @@ const connectDB = require('./db/index');
 const adminRoutes = require('./routes/admin');
 const sponsorsRoutes = require('./routes/sponsors');
 const speakersRoutes = require('./routes/speakers');
-const rsvpRoutes = require('./routes/rsvp');
+const rsvpRoutes = require('./routes/rsvps');
 require('dotenv').config();
 
 const app = express();

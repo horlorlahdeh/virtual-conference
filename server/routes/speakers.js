@@ -20,9 +20,9 @@ router.get('/', async (req, res) => {
 
 router.post('/add', auth, async (req, res) => {
   const schema = Joi.object({
-    name: Joi.string().alphanum().min(1).required(),
-    company: Joi.string().alphanum().min(1).required(),
-    position: Joi.string().alphanum().min(1).required(),
+    name: Joi.string().min(1).required(),
+    company: Joi.string().min(1).required(),
+    position: Joi.string().min(1).required(),
     avatar: Joi.string().uri().required(),
   });
 
@@ -40,7 +40,7 @@ router.post('/add', auth, async (req, res) => {
     return;
   }
   try {
-    const { name, website, avatar } = req.body;
+    const { name, company, position, avatar } = req.body;
     const user = await Admin.findOne({ id: req.user });
     if (user.admin_level < 1) {
       res.status(401).send({
@@ -58,9 +58,9 @@ router.post('/add', auth, async (req, res) => {
     }
     const speaker = new Speaker({
       name,
-      website,
+      company,
       avatar,
-      added_by: user.username,
+      position,
     });
     const createdSpeaker = await speaker.save();
     res.status(200).send({
