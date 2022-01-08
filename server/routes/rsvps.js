@@ -2,6 +2,7 @@ const express = require('express');
 const auth = require('../middleware/auth');
 const Joi = require('joi');
 const { RSVP, Admin } = require('../db/Models');
+const { convertJoiErrorToArray } = require('../utils/helpers');
 
 const router = express.Router();
 
@@ -82,13 +83,13 @@ router.post('/confirm', auth, async (req, res) => {
       });
       return;
     }
-    const rsvp = await RSVP.findOne({_id: id, confirmed: true});
+    const rsvp = await RSVP.findOne({ _id: id, confirmed: true });
     if (rsvp) {
-        res.status(403).send({
-          status: 'failed',
-          message: 'Reservation already confirmed',
-        });
-        return;
+      res.status(403).send({
+        status: 'failed',
+        message: 'Reservation already confirmed',
+      });
+      return;
     }
     await RSVP.findOneAndUpdate({ _id: id }, { confirmed: true });
     res.status(200).send({
