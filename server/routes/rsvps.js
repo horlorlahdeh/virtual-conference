@@ -27,18 +27,24 @@ router.post('/', async (req, res) => {
   }
   try {
     const { name, email } = req.body;
-    const existingRSVP = await RSVP.findOne({ email, confirmed: true });
+    const existingRSVP = await RSVP.findOne({ email });
     if (existingRSVP) {
       res.status(403).send({
         status: 'failed',
         message: 'You already have a reservation',
       });
+      return;
     }
-    const rsvp = new RSVP({
+    const newRsvp = new RSVP({
       name,
       email,
     });
-    await rsvp.save();
+    const rsvp = await newRsvp.save();
+    res.status(200).send({
+      status: 'success',
+      message: 'RSVP reservation made',
+      data: rsvp,
+    });
   } catch (err) {
     console.error(err.message);
   }
@@ -67,7 +73,7 @@ router.get('/', auth, async (req, res) => {
 
 router.post('/confirm', auth, async (req, res) => {
   try {
-    const { id, status } = req.body;
+    const { id } = req.body;
     const user = await Admin.findOne({ _id: req.user });
     if (user && user.admin_level < 1) {
       res.status(401).send({
@@ -76,14 +82,18 @@ router.post('/confirm', auth, async (req, res) => {
       });
       return;
     }
-    const rsvp = await RSVP.findOneAndUpdate(
-      { _id: id },
-      { confirmed: status },
-    );
+    const rsvp = await RSVP.findOne({_id: id, confirmed: true});
+    if (rsvp) {
+        res.status(403).send({
+          status: 'failed',
+          message: 'Reservation already confirmed',
+        });
+        return;
+    }
+    await RSVP.findOneAndUpdate({ _id: id }, { confirmed: true });
     res.status(200).send({
       status: 'success',
       message: 'RSVP status updated successfully',
-      data: rsvp,
     });
   } catch (error) {}
 });
