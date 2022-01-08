@@ -8,6 +8,10 @@ const RSVPSchema = new Schema({
     required: true,
     unique: true,
   },
+  confirmed: {
+    type: Boolean,
+    default: false,
+  },
   created_at: {
     type: Date,
     default: Date.now,

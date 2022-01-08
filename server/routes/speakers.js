@@ -5,6 +5,19 @@ const router = express.Router();
 const auth = require('../middleware/auth');
 const { convertJoiErrorToArray } = require('../utils/helpers');
 
+router.get('/', async (req, res) => {
+  try {
+    const speakers = await Speaker.find({ published: true });
+    res.status(200).send({
+      status: 'success',
+      message: 'Sponsors retrieved successfully',
+      data: speakers,
+    });
+  } catch (err) {
+    console.error(err.message);
+  }
+});
+
 router.post('/add', auth, async (req, res) => {
   const schema = Joi.object({
     name: Joi.string().alphanum().min(1).required(),
