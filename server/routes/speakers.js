@@ -1,6 +1,6 @@
 const express = require('express');
 const Joi = require('joi');
-const { Sponsor, Admin } = require('../db/Models/index');
+const { Speaker, Admin } = require('../db/Models/index');
 const router = express.Router();
 const auth = require('../middleware/auth');
 const { convertJoiErrorToArray } = require('../utils/helpers');
@@ -8,8 +8,9 @@ const { convertJoiErrorToArray } = require('../utils/helpers');
 router.post('/add', auth, async (req, res) => {
   const schema = Joi.object({
     name: Joi.string().alphanum().min(1).required(),
-    website: Joi.string().uri().required(),
-    icon: Joi.string().uri().required(),
+    company: Joi.string().alphanum().min(1).required(),
+    position: Joi.string().alphanum().min(1).required(),
+    avatar: Joi.string().uri().required(),
   });
 
   try {
@@ -26,33 +27,33 @@ router.post('/add', auth, async (req, res) => {
     return;
   }
   try {
-    const { name, website, icon } = req.body;
+    const { name, website, avatar } = req.body;
     const user = await Admin.findOne({ id: req.user });
     if (user.admin_level < 1) {
       res.status(401).send({
         status: 'failed',
-        message: 'Only super admins add sponsors',
+        message: 'Only super admins add speaker',
       });
     }
-    const existing_sponsor = await Sponsor.findOne({ name });
-    if (existing_sponsor) {
+    const existing_speaker = await Speaker.findOne({ name });
+    if (existing_speaker) {
       res.status(403).send({
         status: 'failed',
-        message: 'Sponsor already exists in our records',
+        message: 'Speaker already exists in our records',
       });
       return;
     }
-    const sponsor = new Sponsor({
+    const speaker = new Speaker({
       name,
       website,
-      icon,
+      avatar,
       added_by: user.username,
     });
-    const createdSponsor = await sponsor.save();
+    const createdSpeaker = await speaker.save();
     res.status(200).send({
       status: 'success',
       message: 'Sponsor addedd successfully',
-      data: createdSponsor,
+      data: createdSpeaker,
     });
   } catch (err) {
     console.error(err.message);
@@ -69,18 +70,18 @@ router.delete('/remove', auth, async (req, res) => {
         message: 'Only Super Admins can delete sponsors',
       });
     }
-    const sponsor = await Sponsor.findOneAndDelete({ _id: id });
-    if (!sponsor) {
+    const speaker = await Speaker.findOneAndDelete({ _id: id });
+    if (!speaker) {
       res.status(401).send({
         status: 'failed',
-        message: 'No such sponsors found',
+        message: 'No such speakers found',
       });
       return;
     }
     res.status(200).send({
       status: 'success',
-      message: 'Sponsor removed successfully',
-      data: sponsor,
+      message: 'Speaker removed successfully',
+      data: speaker,
     });
   } catch (err) {
     console.error(err.message);
