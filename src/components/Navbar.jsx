@@ -7,7 +7,7 @@ const Navbar = ({ title }) => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <nav className='bg-black'>
+    <nav className='bg-black z-50 p-2'>
       <div className=' w-10/12 mx-auto py-6 lg:hidden'>
         <div className={`flex   items-center justify-between  `}>
           <div className='flex  items-center '>

@@ -11,8 +11,8 @@ const Date = () => {
               fri
             </h1>
             <p className='text-lg mb-8 lg:mb-4 font-medium'>8 Speakers</p>
-            <p className='text-lg mb-14 lg:mb-4 font-medium'>2 Workshops</p>
-            <p className='text-lg mb-14 font-medium'>3 Auctions</p>
+            <p className='text-lg mb-14 font-medium'>2 Workshops</p>
+            {/* <p className='text-lg mb-14 font-medium'>3 Auctions</p> */}
             <Button text='view schedule' />
           </div>
 

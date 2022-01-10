@@ -20,8 +20,6 @@ module.exports = {
         home3: "url('../src/images/home/home-img3.png')",
         homeHeroBg: "url('../src/images/home_hero_bg.jpg')",
         homeColorBg: "url('../src/images/home-color-bg.png')",
-        homeRadialBg:
-          'radial-gradient(circle, rgba(0,0,0), rgba(0,0,0, 0.5), rgba(0,0,0,0.7))',
         screens: {
           xs: '350px',
           ...defaultTheme.screens,
@@ -37,6 +35,8 @@ module.exports = {
         'home-pink': '#ff6af0',
         'home-blue': '#6700FF',
         'home-yellow': '#fff022',
+        'home-gradient-bg':
+          'radial-gradient(circle, rgba(0,0,0), rgba(0,0,0, 0.5), rgba(0,0,0,0.7))',
       }),
       borderColor: (theme) => ({
         ...theme('colors'),
