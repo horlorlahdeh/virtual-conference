@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { FaBars } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import logo from '../images/logo_dygycon_lg.png'
+import logo from '../images/logo_dygycon_lg.png';
 
 const Navbar = ({ title }) => {
   const [showMenu, setShowMenu] = useState(false);
