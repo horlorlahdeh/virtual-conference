@@ -1,20 +1,22 @@
-import Virtual from "./components/about/Virtual";
-import About from "./pages/About";
-import Contact from "./pages/Contact";
-import Event from "./pages/Event";
-import Home from "./pages/Home";
-import Pricing from "./pages/Pricing";
-import Test from "./pages/Test";
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Virtual from './components/about/Virtual';
+import About from './pages/About';
+import Contact from './pages/Contact';
+import Event from './pages/Event';
+import Pricing from './pages/Pricing';
 
 function App() {
   return (
-    <div className="">
-      <Home/>
-      {/* <About /> */}
-      {/* <Event /> */}
-      {/* <Contact/> */}
-      {/* <Pricing/> */}
-      {/* <Test /> */}
+    <div className=''>
+      <Router>
+        <Switch>
+          <Route exact path='/' component={Virtual} />
+          <Route exact path='/about' component={About} />
+          <Route exact path='/contact' component={Contact} />
+          <Route exact path='/event' component={Event} />
+          <Route exact path='/pricing' component={Pricing} />
+        </Switch>
+      </Router>
     </div>
   );
 }

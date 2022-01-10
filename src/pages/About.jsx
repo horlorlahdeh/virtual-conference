@@ -1,25 +1,25 @@
-import React from "react";
-import EventOrganisers from "../components/about/EventOrganisers";
-import Faq from "../components/about/Faq";
-import Hero from "../components/about/Hero";
-import Navbar from "../components/Navbar";
-import Register from "../components/Register";
-import Sponsors from "../components/about/Sponsors";
-import Virtual from "../components/about/Virtual";
-import VirtualBottom from "../components/about/VirtualBottom";
+import React from 'react';
+import EventOrganisers from '../components/about/EventOrganisers';
+import Faq from '../components/about/Faq';
+import Hero from '../components/about/Hero';
+import Register from '../components/Register';
+import Sponsors from '../components/about/Sponsors';
+import Virtual from '../components/about/Virtual';
+import VirtualBottom from '../components/about/VirtualBottom';
+import Layout from '../components/Layout';
 
 const About = () => {
   return (
     <div>
-      <Navbar title={"Virtual Confrence about"} />
-
-      <Hero />
-      <Virtual />
-      <VirtualBottom />
-      <EventOrganisers />
-      <Faq />
-      <Sponsors />
-      <Register />
+      <Layout title='About Us'>
+        <Hero />
+        <Virtual />
+        <VirtualBottom />
+        <EventOrganisers />
+        <Faq />
+        <Sponsors />
+        <Register />
+      </Layout>
     </div>
   );
 };
