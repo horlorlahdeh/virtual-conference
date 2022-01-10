@@ -11,7 +11,8 @@ module.exports = {
         shapesRegisterMain: "url('../src/images/shapes-register-main.png')",
         shapesRegisterSm: "url('../src/images/shapes-register-sm.png')",
         pricingSkyBlue: "url('../src/images/pricing/pricing-sky-blue.png')",
-        pricingYellowLight: "url('../src/images/pricing/pricing-yellow.png')"
+        pricingYellowLight: "url('../src/images/pricing/pricing-yellow.png')",
+        homeHeroBg: "url('../src/images/home_hero_bg.jpg')"
       },
       backgroundColor: (theme) => ({
         ...theme("colors"),
