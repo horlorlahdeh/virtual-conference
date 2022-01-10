@@ -8,11 +8,11 @@ const Hero = () => {
           <div className='top-overlay'></div>
           <div className='flex  flex-col lg:flex-col justify-center items-center md:mt-14 w-10/12 max-w-screen mx-auto'>
             <h1 className='z-10 text-home-yellow text-4xl md:text-6xl lg:text-9xl lg:flex-1 font-bold mb-12'>
-              DYGYCON 7.0
+              DYGYCON 7
             </h1>
             <h4 className='z-10 text-3xl md:text-4xl lg:text-6xl lg:flex-1 font-bold mb-10 text-center'>
-              Friday to Saturday, January 21-23, 2022 Livestream January 22nd, 2
-              PM EST / 6 PM UTC
+              Friday to Saturday, January 21-23, 2022 <br />
+              <span className='text-2xl lg:text-4xl text-yellow'>Livestream January 22nd, 2 PM EST / 6 PM UTC</span>
             </h4>
             <p className='z-10 mb-8 mt-2 lg:text-3xl text-center lg:w-12/12 '>
               DYGYCON is your gateway to crypto projects, talks, giveaways, and
