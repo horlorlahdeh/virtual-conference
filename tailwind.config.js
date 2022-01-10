@@ -35,6 +35,7 @@ module.exports = {
         'home-pink': '#ff6af0',
         'home-blue': '#6700FF',
         'home-yellow': '#fff022',
+        'home-red': '#FB3800',
         'home-gradient-bg':
           'radial-gradient(circle, rgba(0,0,0), rgba(0,0,0, 0.5), rgba(0,0,0,0.7))',
       }),

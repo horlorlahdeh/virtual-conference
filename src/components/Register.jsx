@@ -15,7 +15,7 @@ const Register = () => {
       id='register'
     >
       <div className='py-20 bg-gradient-to-r from-black via-transparent to-black overlay-black'>
-      <div className='top-overlay'></div>
+        <div className='top-overlay'></div>
         <div className='flex   flex-col lg:flex-row lg:gap-x-12 lg:items-start w-10/12  mx-auto max-w-screen'>
           <div className='  text-white flex flex-1 flex-col w-10/12 md:w-full items-center justify-center'>
             <div className='bg-black hover:text-black hover:bg-pink-400 transition-all   px-4 py-8 md:p-8 w-full '>
@@ -47,7 +47,7 @@ const Register = () => {
                 <input
                   placeholder='Email'
                   type='text'
-                  className='flex-1 ml-4 bg-none z-10 p-4 font-bold text-black focus:border-none w-full'
+                  className='flex-1 bg-none z-10 p-4 font-bold text-black focus:outline-none focus-visible:outline-none w-full'
                 />
               </form>
             </div>

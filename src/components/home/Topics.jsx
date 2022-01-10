@@ -38,7 +38,7 @@ const Topics = () => {
                 meeting
               </h5>
               <h1 className='text-lg md:text-xl lg:text-2xl capitalize font-semibold'>
-                Conecting
+                Connecting
               </h1>
             </div>
           </div>

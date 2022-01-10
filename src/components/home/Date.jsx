@@ -5,7 +5,7 @@ const Date = () => {
     return (
       <section className='bg-black  '>
         <div className='flex  flex-col lg:grid lg:grid-cols-3 justify-between gap-y-8 gap-x-10 mx-auto w-10/12 lg:w-9/12 max-w-screen '>
-          <div className='bg-pink-200 bg-home1 bg-home bg-cover py-10 lg:pb-28 px-4 lg:px-10  '>
+          <div className='bg-yellow-500 bg-home1 bg-home bg-cover py-10 lg:pb-28 px-4 lg:px-10  '>
             <p className='text-sm md:text-lg lg:text-xl mb-1'>January 20</p>
             <h1 className='text-3xl md:text-5xl lg:text-7xl font-semibold capitalize mb-10'>
               fri
@@ -26,7 +26,7 @@ const Date = () => {
             <Button text='view schedule' />
           </div>
 
-          <div className='bg-home-yellow bg-home3 bg-home bg-cover py-10 lg:pb-28 px-4 lg:px-10  '>
+          <div className='bg-yellow-500 bg-home3 bg-home bg-cover py-10 lg:pb-28 px-4 lg:px-10  '>
             <p className='text-sm md:text-lg lg:text-xl mb-1'>January 22</p>
             <h1 className='text-3xl md:text-5xl lg:text-7xl font-semibold capitalize mb-10'>
               fri
