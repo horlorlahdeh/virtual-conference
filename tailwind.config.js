@@ -17,6 +17,9 @@ module.exports = {
         home1: "url('../src/images/home/home-img1.png')",
         home2: "url('../src/images/home/home-img2.png')",
         home3: "url('../src/images/home/home-img3.png')",
+        schedule1: "url('../src/images/schedule/schedule-img.png')",
+        schedule2: "url('../src/images/schedule/schedule-img2.png')",
+        schedule3: "url('../src/images/schedule/schedule-img3.png')",
         homeHeroBg: "url('../src/images/home_hero_bg.jpg')"
       },
       backgroundColor: (theme) => ({
@@ -43,6 +46,9 @@ module.exports = {
        }),
        colors: {
         "home-yellow": "#fff022",
+        "schedule-pink": "#FF6AF0",
+        "schedule-red": "#FB3800",
+        "schedule-yellow": "#FFF022",
       }
     },
   },
