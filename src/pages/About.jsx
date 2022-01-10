@@ -12,6 +12,7 @@ const About = () => {
   return (
     <div>
       <Navbar title={"Virtual Confrence about"} />
+
       <Hero />
       <Virtual />
       <VirtualBottom />

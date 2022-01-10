@@ -21,6 +21,18 @@
 .max-w-screen {
   max-width: 1100px;
 }
+.max-w-h-screen {
+  max-width: 500px;
+}
+.max-w-h-screen2 {
+  max-width: 580px;
+}
+.mb-zero{
+  margin-bottom: 0 !important;
+}
+.mt-zero{
+  margin-top: 0 !important;
+}
 .border-radius {
   border-radius: 50%;
 }
@@ -71,7 +83,8 @@
   width: 1536px;
 }
 .translate-x {
-  animation: bounce 0.2s ease-in-out normal;
+  animation: bounce 0.2s ease-in-out normal  ;
+  animation-fill-mode: forwards;
 }
 @keyframes bounce {
   0% {
@@ -84,4 +97,15 @@
 }
 .rem{
   top: 1.1rem;
+}
+.test{
+  color: red;
+}
+.bg-home{
+  background-position-x: center;
+    background-position-y: bottom;
+}
+.bg-pos{
+  background-position: 50%;
+  /* background-size: 100%; */
 }

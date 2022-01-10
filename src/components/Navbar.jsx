@@ -11,7 +11,7 @@ const Navbar = ({title}) => {
       <div className=" w-10/12 mx-auto py-6 lg:hidden">
         <div className={`flex   items-center justify-between  `}>
           <div className="flex  items-center ">
-            <h1 className="text-2xl font-semibold">{title}</h1>
+            <h1 className="text-2xl font-semibold capitalize">{title}</h1>
           </div>
 
           <div className="flex justify-end gap-x-4 mr-4">

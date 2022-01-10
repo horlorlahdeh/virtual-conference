@@ -7,6 +7,7 @@ const Pricing = () => {
   return (
     <div>
       <Navbar title="Virtual Conference Pricing" />
+     
       <Container>
         <Hero />
       </Container>

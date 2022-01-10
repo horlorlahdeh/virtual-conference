@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonVirtual from './Button/ButtonVirtual'
 const Virtual = () => {
     return (
         <section className="bg-black text-white py-4 md:py-8">
@@ -7,7 +8,7 @@ const Virtual = () => {
                     <h1 className="text-2xl md:text-4xl lg:text-6xl w-10/12 font-bold  mb-8">
                     A virtual web developer conference 
                     </h1>
-                    <button className="border-yellow-200 text-yellow-200 border-2  py-3 px-4 bg-transparent  capitalize">view schedule</button>
+                    <ButtonVirtual text="view schedule"/>
                 </div>
                 <div className="bg-purple-600 lg:flex-1 pt-8">
                     <img src="../images/about/virtual web developer.png" alt="virtual web developer" />
