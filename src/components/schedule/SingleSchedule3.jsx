@@ -110,8 +110,8 @@ const SingleSchedule = () => {
                 <div className="w-8 h-8 border-radius overflow-hidden">
                   <img
                     src="../images/schedule/schedule-bradley.jpg"
-                    alt=""
-                    className=""
+                    alt="img"
+                    className=" "
                   />
                 </div>
                 <h5 className="capitalize text-lg font-normal  tracking-wide">
