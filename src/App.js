@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Virtual from './components/about/Virtual';
+import Home from './pages/Home'
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Event from './pages/Event';
@@ -10,7 +10,7 @@ function App() {
     <div className=''>
       <Router>
         <Switch>
-          <Route exact path='/' component={Virtual} />
+          <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/event' component={Event} />

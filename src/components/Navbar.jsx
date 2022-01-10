@@ -70,18 +70,18 @@ const Navbar = ({ title }) => {
             </Link>
           </li>
           <li className='text-base  hover:text-red-500 cursor-pointer'>
-            <Link to='/' className='text-white'>
-              Participate
+            <Link to='/event' className='text-white'>
+              Event
             </Link>
           </li>
           <li className='text-base  hover:text-red-500 cursor-pointer'>
-            <Link to='/' className='text-white'>
+            <Link to='/about' className='text-white'>
               About
             </Link>
           </li>
           <li className='text-base  hover:text-red-500 cursor-pointer'>
-            <Link to='/' className='text-white'>
-              Register
+            <Link to='/contact' className='text-white'>
+              Contact
             </Link>
           </li>
           {/* <li className='text-base  hover:text-red-500 cursor-pointer'>

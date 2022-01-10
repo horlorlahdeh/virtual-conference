@@ -17,7 +17,7 @@ module.exports = {
         home1: "url('../src/images/home/home-img1.png')",
         home2: "url('../src/images/home/home-img2.png')",
         home3: "url('../src/images/home/home-img3.png')",
-      
+        homeHeroBg: "url('../src/images/home_hero_bg.jpg')"
       },
       backgroundColor: (theme) => ({
         ...theme("colors"),
