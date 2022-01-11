@@ -4,8 +4,8 @@ import { FaArrowRight } from "react-icons/fa";
 const Hero = () => {
   return (
           
-            <div className="w-10/12 lg:w-6/12 mx-auto border-4 lg:border-8 border-home-blue mb-zero bg-dots bg-repeat-round p-4 md:p-8 lg:p-12 relative  ">
-            <div className="bg-home-blue inline-block p-4 md:p-8 lg:p-10 text-white  hover:px-12 hover:bg-green-200 absolute top-0 right-0 ">
+            <div className=" border-4 lg:border-8 lg:w-1/2 lg:h-4/5  border-home-blue mb-zero bg-dots bg-repeat-round p-4 md:p-8 lg:p-12 relative  ">
+            <div className="bg-home-blue inline-block p-4 md:p-8 lg:p-10 text-white  hover:px-12  absolute top-0 right-0 ">
                 {/* <Button text="hello"/> */}
                 <button><FaArrowRight/>
                 </button>

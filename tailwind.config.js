@@ -20,6 +20,9 @@ module.exports = {
         schedule1: "url('../src/images/schedule/schedule-img.png')",
         schedule2: "url('../src/images/schedule/schedule-img2.png')",
         schedule3: "url('../src/images/schedule/schedule-img3.png')",
+        speakersHero: "url('../src/images/speakers/speaker-hero.png')",
+        speakersSignUp: "url('../src/images/speakers/sign.png')",
+        speakersJuly: "url('../src/images/speakers/july.png')",
         homeHeroBg: "url('../src/images/home_hero_bg.jpg')"
       },
       backgroundColor: (theme) => ({

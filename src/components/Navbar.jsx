@@ -59,6 +59,16 @@ const Navbar = ({ title }) => {
               Schedule
             </Link>
           </li>
+          <li className='text-base border-b py-2 px-8 hover:text-red-500 cursor-pointer'>
+            <Link to='/speakers' className='text-white'>
+              Speakers
+            </Link>
+          </li>
+          <li className='text-base border-b py-2 px-8 hover:text-red-500 cursor-pointer'>
+            <Link to='/blog' className='text-white'>
+            Blog
+            </Link>
+          </li>
         </ul>
       </div>
 
@@ -87,6 +97,16 @@ const Navbar = ({ title }) => {
           <li className='text-base  hover:text-red-500 cursor-pointer'>
             <Link to='/schedule' className='text-white'>
               Schedule
+            </Link>
+          </li>
+          <li className='text-base  hover:text-red-500 cursor-pointer'>
+            <Link to='/speakers' className='text-white'>
+            Speakers
+            </Link>
+          </li>
+          <li className='text-base  hover:text-red-500 cursor-pointer'>
+            <Link to='/blog' className='text-white'>
+            Blog
             </Link>
           </li>
           <li className='text-base  hover:text-red-500 cursor-pointer'>

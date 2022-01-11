@@ -27,6 +27,9 @@
 .max-w-h-screen2 {
   max-width: 580px;
 }
+.max-w-screen-speakers {
+  max-width: 850px;
+}
 .mb-zero{
   margin-bottom: 0 !important;
 }
@@ -105,7 +108,14 @@
   background-position-x: center;
     background-position-y: bottom;
 }
+.bg-center-top{
+  background-position-x: center;
+    background-position-y: top;
+}
 .bg-pos{
   background-position: 50%;
   /* background-size: 100%; */
+}
+.h-speakers{
+  height: 40rem !important;
 }

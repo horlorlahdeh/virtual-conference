@@ -5,6 +5,8 @@ import Contact from './pages/Contact';
 import Event from './pages/Event';
 import Pricing from './pages/Pricing';
 import Schedule from './pages/Schedule';
+import Speakers from './pages/Speakers';
+import Blog from './pages/Blog';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
           <Route exact path='/event' component={Event} />
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/schedule' component={Schedule} />
+          <Route exact path='/speakers' component={Speakers} />
+          <Route exact path='/blog' component={Blog} />
         </Switch>
       </Router>
     </div>
