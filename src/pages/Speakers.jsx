@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Register from "../components/Register";
 import Date from "../components/speakers/Date";
 import Developers from "../components/speakers/Developers";
 import Hero from "../components/speakers/Hero";
@@ -13,6 +14,7 @@ const Speakers = () => {
       <Developers/>
       <SignUp/> 
       <Date/> 
+      <Register/>
     </div>
   );
 };

@@ -1,23 +1,40 @@
-/* .button {
-  width: 150px;
+.button-pricingpage, .button-pricingpage2, .button-pricingpage3  {
+  width: 120px;
   height: 50px;
-  background-color: sandybrown;
-  line-height: 50px;
-  text-align: center;
-  /* padding: 1rem; */
-  /* font-size: 1.2rem; */
-  /* margin: auto; */
+  background-color: #ff6af0;
+  color: black;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight:500;
+  padding-left: .8rem;
+}
+.button-pricingpage2{
+  background: transparent;
+  border: 2px solid black;
+}
+.button-pricingpage3{
+  background: black;
+  color: white;
+}
+.button-pricingpage2:hover{
+  background-color: black;
+  color: white;
+}
 
-
-/* .button span {
+.button-pricingpage span,.button-pricingpage2 span,.button-pricingpage3 span {
   opacity: 0;
   transition: 200ms;
   transform: translate(-1.2vh);
+  font-weight:500
 }
 
-.button:hover span {
+
+.button-pricingpage:hover span, .button-pricingpage2:hover span,.button-pricingpage3:hover span {
   padding-left: 10px;
   opacity: 1;
   transform: translate(-0.7);
 }
-  */
+.button-pricingpage3{
+  /* opacity: 0; */
+  /* display: none; */
+}

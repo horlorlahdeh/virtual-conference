@@ -90,6 +90,11 @@ const Navbar = ({ title }) => {
           </Link>
         </div>
         <ul className='ul-nav flex items-center capitalize  font-normal justify-self-end gap-x-8 '>
+          <li className='text-base  hover:text-red-500 cursor-pointer'>
+            <Link to='/about' className='text-white'>
+              About
+            </Link>
+          </li>
           <li className='text-base   hover:text-red-500 cursor-pointer'>
             <Link to='/' className='text-white'>
               Home
@@ -101,11 +106,6 @@ const Navbar = ({ title }) => {
             </Link>
           </li>
           <li className='text-base  hover:text-red-500 cursor-pointer'>
-            <Link to='/about' className='text-white'>
-              About
-            </Link>
-          </li>
-          <li className='text-base  hover:text-red-500 cursor-pointer'>
             <Link to='/schedule' className='text-white'>
               Schedule
             </Link>
@@ -113,6 +113,11 @@ const Navbar = ({ title }) => {
           <li className='text-base  hover:text-red-500 cursor-pointer'>
             <Link to='/speakers' className='text-white'>
             Speakers
+            </Link>
+          </li>
+          <li className='text-base  hover:text-red-500 cursor-pointer'>
+            <Link to='/pricing' className='text-white'>
+            Pricing
             </Link>
           </li>
           <li className='text-base  hover:text-red-500 cursor-pointer'>

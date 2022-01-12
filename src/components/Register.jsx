@@ -32,7 +32,7 @@ const Register = () => {
           </div>
         </div>
         <div className="flex-1 pt-48 pb-20 px-12 bg-white bg-shapesRegisterSm bg-no-repeat bg-right-top z-10">
-          <h1 className="text-black font-semibold text-lg md:text-3xl lg:text-5xl lg:w-10/12 mb-8 z-20 lg:font-normal">
+          <h1 className="text-black font-semibold text-lg md:text-3xl lg:text-5xl lg:w-10/12 mb-8 z-20 lg:font-normal tracking-widest">
             Join our newsletter
           </h1>
           <div className="flex border-b-2 overflow-hidden border-black mb-4">

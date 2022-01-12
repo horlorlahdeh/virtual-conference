@@ -116,6 +116,10 @@
   background-position: 50%;
   /* background-size: 100%; */
 }
+.bg-pos-pricing{
+  background-position-x: 50%;
+  background-position-y: center;
+}
 .h-speakers{
   height: 40rem !important;
 }

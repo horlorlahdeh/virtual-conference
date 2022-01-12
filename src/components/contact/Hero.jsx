@@ -1,5 +1,7 @@
 import React,{useState} from "react";
 import { FaFacebookF, FaGooglePlus, FaInstagram, FaTwitter, FaYoutube,FaChevronRight } from "react-icons/fa";
+import { Link } from 'react-router-dom';
+
 
 const Hero = () => {
   const [showArrow,setShowArrow]=useState(false)
@@ -18,7 +20,9 @@ const Hero = () => {
             <FaYoutube  className="cursor-pointer"/>
             <FaGooglePlus className="cursor-pointer"/>
           </div>
+          <Link to="#">
           <button onMouseEnter={()=>setShowArrow(true)} onMouseLeave={()=>setShowArrow(false)}  className={`border-yellow-300 text-yellow-300 border-2 py-3 px-7 ${showArrow&&"pl-2 "} w-40 font-semibold text-lg bg-transparent cursor-pointer  flex items-center gap-x-1 hover:bg-yellow-300 hover:text-black  transform-all duration-500`}>Registration <FaChevronRight className={`${showArrow?"flex ml-2":"hidden"}`}/> </button>  
+          </Link>
         </div>
       </div>
     </section>

@@ -1,5 +1,7 @@
 import React from "react";
 import Button from "./Button/Button";
+import { Link } from 'react-router-dom';
+
 
 const Hero = () => {
   return (
@@ -13,7 +15,10 @@ const Hero = () => {
             Faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit
             neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula.
           </p>
+          <Link to="#">
+
           <Button text="save your seat" />
+          </Link>
         </div>
       </div>
      
