@@ -35,6 +35,11 @@ const Navbar = ({ title }) => {
       >
         <ul className='ul-nav flex flex-col capitalize  w-full font-medium p-4'>
           <li className='text-base border-b py-2 px-8 hover:text-red-500 cursor-pointer'>
+            <Link to='/about' className='text-white'>
+              About
+            </Link>
+          </li>
+          <li className='text-base border-b py-2 px-8 hover:text-red-500 cursor-pointer'>
             <Link to='/' className='text-white'>
               Home
             </Link>
@@ -45,13 +50,18 @@ const Navbar = ({ title }) => {
             </Link>
           </li>
           <li className='text-base border-b py-2 px-8 hover:text-red-500 cursor-pointer'>
-            <Link to='/about' className='text-white'>
-              About
+            <Link to='/register' className='text-white'>
+              Register
             </Link>
           </li>
           <li className='text-base border-b py-2 px-8 hover:text-red-500 cursor-pointer'>
-            <Link to='/register' className='text-white'>
-              Register
+            <Link to='/event' className='text-white'>
+              Event
+            </Link>
+          </li>
+          <li className='text-base border-b py-2 px-8 hover:text-red-500 cursor-pointer'>
+            <Link to='/speakers' className='text-white'>
+              Speakers
             </Link>
           </li>
           <li className='text-base border-b py-2 px-8 hover:text-red-500 cursor-pointer'>
@@ -59,9 +69,10 @@ const Navbar = ({ title }) => {
               Schedule
             </Link>
           </li>
+          
           <li className='text-base border-b py-2 px-8 hover:text-red-500 cursor-pointer'>
-            <Link to='/speakers' className='text-white'>
-              Speakers
+            <Link to='/pricing' className='text-white'>
+              Pricing
             </Link>
           </li>
           <li className='text-base border-b py-2 px-8 hover:text-red-500 cursor-pointer'>

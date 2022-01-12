@@ -1,9 +1,12 @@
 import React from 'react'
+import Hero from '../components/blog/Hero'
+import Navbar from '../components/Navbar'
 
 const Blog = () => {
     return (
         <div>
-            blog
+            <Navbar/>
+            <Hero/>
         </div>
     )
 }

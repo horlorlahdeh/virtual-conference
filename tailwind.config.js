@@ -10,6 +10,8 @@ module.exports = {
         shapesPricing: "url('../src/images/shapes-pricing.png')",
         shapesRegisterMain: "url('../src/images/shapes-register-main.png')",
         shapesRegisterSm: "url('../src/images/shapes-register-sm.png')",
+        shapesBlog: "url('../src/images/blog/shapes-blog.png')",
+        shapesBlog2: "url('../src/images/blog/blog-2.png')",
         pricingSkyBlue: "url('../src/images/pricing/pricing-sky-blue.png')",
         pricingYellowLight: "url('../src/images/pricing/pricing-yellow.png')",
         shapesHome: "url('../src/images/shapes-home.png')",
