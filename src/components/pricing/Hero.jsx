@@ -1,13 +1,12 @@
 import React from "react";
 import Button from "./Button/Button";
 import Button2 from "./Button/Button2";
-import { Link } from 'react-router-dom';
 
 
 
 const Hero = () => {
   return (
-    <section className="py-16 bg-transparent">
+    <section className="py-16 lg:pt-40 bg-transparent">
       <div className="flex   flex-col  items-start  w-10/12 max-w-screen mx-auto">
       <h1 className="text-left text-4xl md:text-6xl lg:text-9xl  tracking-wide mb-16">
       Registration
@@ -31,9 +30,7 @@ const Hero = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut. Enim ad minim veniam.
             </p>
-            <Link to="#">
             <Button text="Buy Now" className="lg:mb-14"/>
-          </Link>
           </div>
         <div className="lg:flex-1  bg-sky-blue-pricing text-black bg-pricingBg2 bg-home bg-cover w-full lg:w-1/2 p-6 md:p-8 lg:p-14 ">
           
@@ -54,9 +51,7 @@ const Hero = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut. Enim ad minim veniam.
             </p>
-            <Link to="#">
             <Button2 text="Buy Now"/>        
-          </Link>
         </div>
 
         </div>

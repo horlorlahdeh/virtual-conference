@@ -1,7 +1,6 @@
 import React from "react";
 import Button2 from "./Button/Button2";
 import Button3 from "./Button/Button3";
-import { Link } from 'react-router-dom';
 
 
 
@@ -29,9 +28,7 @@ const Hero2 = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut. Enim ad minim veniam.
             </p>
-            <Link to="#">
             <Button2 text="Buy Now" className="lg:mb-14"/>
-          </Link>
           </div>
         <div className="lg:w-7/12   text-black bg-white bg-home bg-cover w-full  p-6 md:p-8 lg:p-14 ">
           
@@ -52,9 +49,7 @@ const Hero2 = () => {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut. Enim ad minim veniam.
             </p>
-            <Link to="#">
             <Button3 text="Buy Now"/>        
-          </Link>
         </div>
 
         </div>

@@ -7,7 +7,7 @@ import Register from '../components/Register'
 const Blog = () => {
     return (
         <div>
-            <Navbar/>
+            <Navbar title="virtual conference blog"/>
             <Hero/>
             <Posts/>
             <Register/>

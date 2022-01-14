@@ -4,7 +4,7 @@ import Button from "../pricing/Button/Button";
 
 const Hero = () => {
   return (
-    <section className="text-white  py-12 lg:py-2 bg-black  lg:bg-shapesHome bg-cover  bg-no-repeat bg-center bg-pos">
+    <section className="text-white  py-12 lg:py-2 lg:pt-20 bg-black  lg:bg-shapesHome bg-cover  bg-no-repeat bg-center bg-pos">
       <div className=" flex  flex-col items-start md:mt-14 w-10/12 max-w-h-screen2 mx-auto">
         <div className=" w-full">
           <div className="flex flex-col">
@@ -22,7 +22,7 @@ const Hero = () => {
         <div className="flex flex-col">
             <div className="flex flex-row items-end  mb-10 gap-x-4 ">
             <h5 className="capitalize  inline-block md:text-3xl lg:text-5xl flex-1 font-semibold  ">Register now</h5>
-            <div className="bg-home-yellow inline-block p-4 md:p-8 lg:p-10 text-black  hover:px-12 hover:bg-green-200 ">
+            <div className="bg-home-yellow inline-block p-4 md:p-8 lg:p-10 text-black  hover:p-20 hover:w-60 cursor-pointer ">
                 {/* <Button text="hello"/> */}
                 <button><FaArrowRight/>
                 </button>

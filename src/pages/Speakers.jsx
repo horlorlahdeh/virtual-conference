@@ -9,7 +9,7 @@ import SignUp from "../components/speakers/SignUp";
 const Speakers = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar title="virtual conference speakers" />
       <Hero />
       <Developers/>
       <SignUp/> 

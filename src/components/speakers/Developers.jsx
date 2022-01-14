@@ -49,7 +49,7 @@ const Developers = () => {
           <div className="flex flex-row items-start gap-x-4 mb-12 lg:w-3/12">
             <div className="w-12 h-12 lg:w-16 lg:h-16 border-radius overflow-hidden">
               <img
-                src="../images/schedule/schedule-jennifer.jpg"
+                src="../images/speakers/img-1.jpg"
                 alt=""
                 className=""
               />
@@ -59,7 +59,7 @@ const Developers = () => {
                 DEVELOPER
               </h5>
               <h5 className="capitalize  text-lg md:text-lg lg:text-2xl font-normal  tracking-widest mb-7">
-                Harold Bennett
+              Helen Mathis
               </h5>
               <div className="flex gap-x-5 font-bold">
                 <button>
@@ -87,7 +87,7 @@ const Developers = () => {
           <div className="flex flex-row items-start gap-x-4 mb-12 lg:w-3/12">
             <div className="w-12 h-12 lg:w-16 lg:h-16 border-radius overflow-hidden">
               <img
-                src="../images/schedule/schedule-jennifer.jpg"
+                src="../images/speakers/img-2.jpg"
                 alt=""
                 className=""
               />
@@ -97,7 +97,7 @@ const Developers = () => {
                 DEVELOPER
               </h5>
               <h5 className="capitalize  text-lg md:text-lg lg:text-2xl font-normal  tracking-widest mb-7">
-                Harold Bennett
+              Leonard Manning
               </h5>
               <div className="flex gap-x-5 font-bold">
                 <button>
@@ -125,7 +125,7 @@ const Developers = () => {
           <div className="flex flex-row items-start gap-x-4 mb-12 lg:w-3/12">
             <div className="w-12 h-12 lg:w-16 lg:h-16 border-radius overflow-hidden">
               <img
-                src="../images/schedule/schedule-jennifer.jpg"
+                src="../images/speakers/img-5.jpg"
                 alt=""
                 className=""
               />
@@ -135,7 +135,7 @@ const Developers = () => {
                 DEVELOPER
               </h5>
               <h5 className="capitalize  text-lg md:text-lg lg:text-2xl font-normal  tracking-widest mb-7">
-                Harold Bennett
+              Curtis Berry
               </h5>
               <div className="flex gap-x-5 font-bold">
                 <button>
@@ -163,7 +163,7 @@ const Developers = () => {
           <div className="flex flex-row items-start gap-x-4 mb-12 lg:w-3/12">
             <div className="w-12 h-12 lg:w-16 lg:h-16 border-radius overflow-hidden">
               <img
-                src="../images/schedule/schedule-jennifer.jpg"
+                src="../images/speakers/img-6.jpg"
                 alt=""
                 className=""
               />
@@ -173,7 +173,7 @@ const Developers = () => {
                 DEVELOPER
               </h5>
               <h5 className="capitalize  text-lg md:text-lg lg:text-2xl font-normal  tracking-widest mb-7">
-                Harold Bennett
+              John Doe
               </h5>
               <div className="flex gap-x-5 font-bold">
                 <button>
@@ -201,7 +201,7 @@ const Developers = () => {
           <div className="flex flex-row items-start gap-x-4 mb-12 lg:w-3/12">
             <div className="w-12 h-12 lg:w-16 lg:h-16 border-radius overflow-hidden">
               <img
-                src="../images/schedule/schedule-jennifer.jpg"
+                src="../images/speakers/img-7.jpg"
                 alt=""
                 className=""
               />
@@ -211,7 +211,7 @@ const Developers = () => {
                 DEVELOPER
               </h5>
               <h5 className="capitalize  text-lg md:text-lg lg:text-2xl font-normal  tracking-widest mb-7">
-                Harold Bennett
+              Anthony Gonsalves
               </h5>
               <div className="flex gap-x-5 font-bold">
                 <button>

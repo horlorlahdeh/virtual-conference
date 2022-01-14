@@ -6,7 +6,7 @@ import Schedules from "../components/schedule/Schedules";
 const Schedule = () => {
   return (
     <div>
-      <Navbar />
+      <Navbar title="virtual conference schedule" />
       <Schedules/>
       <Register/>
     </div>

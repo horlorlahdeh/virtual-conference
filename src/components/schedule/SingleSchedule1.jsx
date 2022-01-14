@@ -1,6 +1,5 @@
 import React from 'react'
 import Button from './Button/Button';
-import { Link } from 'react-router-dom';
 
 
 
@@ -15,9 +14,7 @@ const SingleSchedule = () => {
           </h1>
           <p className="text-lg mb-8 lg:mb-4 font-medium">8 Speakers</p>
           <p className="text-lg mb-14 font-medium">2 Workshops</p>
-          <Link to="#">
           <Button text="Purchase Day Pass" />
-          </Link>
         </div>
 
             </div>

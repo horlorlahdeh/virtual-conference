@@ -7,6 +7,7 @@ import Pricing from './pages/Pricing';
 import Schedule from './pages/Schedule';
 import Speakers from './pages/Speakers';
 import Blog from './pages/Blog';
+import Landing from './pages/Landing';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
+          <Route exact path='/landing' component={Landing} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/event' component={Event} />
           <Route exact path='/pricing' component={Pricing} />

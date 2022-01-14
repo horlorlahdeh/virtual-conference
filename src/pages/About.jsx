@@ -22,6 +22,6 @@ const About = () => {
       </Layout>
     </div>
   );
-};
+}; 
 
 export default About;

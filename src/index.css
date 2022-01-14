@@ -30,6 +30,9 @@
 .max-w-screen-speakers {
   max-width: 850px;
 }
+.max-w-screen-landing {
+  max-width: 700px;
+}
 .mb-zero{
   margin-bottom: 0 !important;
 }

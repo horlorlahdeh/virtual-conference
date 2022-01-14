@@ -7,6 +7,8 @@
   text-align: center;
   text-transform: capitalize;
   font-size: 1rem;
+  padding-left: .5rem;
+
 }
 .button-aboutpage2{
   width: 160px;
@@ -17,7 +19,9 @@
   text-align: center;
   text-transform: capitalize;
   font-size: 1rem;
-  border: 2px solid #FFF022
+  border: 2px solid #FFF022;
+  padding-left: .5rem;
+
 }
 
 .button-aboutpage span, .button-aboutpage2 span {

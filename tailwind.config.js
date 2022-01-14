@@ -15,6 +15,9 @@ module.exports = {
         shapesPricing: "url('../src/images/pricing/pricing-bg.png')",
         pricingBg2: "url('../src/images/pricing/pricing-bg-2.png')",
         pricingBg3: "url('../src/images/pricing/pricing-bg-3.png')",
+        landingBgMain: "url('../src/images/landing/landing-bg-main.png')",
+        landingBgSecond: "url('../src/images/landing/landing-bg-second.png')",
+        landingBg1: "url('../src/images/landing/landing-bg-1.png')",
         shapesHome: "url('../src/images/shapes-home.png')",
         home1: "url('../src/images/home/home-img1.png')",
         home2: "url('../src/images/home/home-img2.png')",
@@ -47,6 +50,7 @@ module.exports = {
         "home-yellow": "#fff022",
         "home-blue": "#6700FF",
         "home-pink": "#ff6af0",
+        "contact-gray": "rgba(255,255,255,0.2)",
 
        }),
        colors: {
@@ -55,6 +59,7 @@ module.exports = {
         "schedule-red": "#FB3800",
         "schedule-yellow": "#FFF022",
         "pricing-brown": "#facdcd",
+        "contact-gray": "#4e4e4e",
       }
     },
   },
