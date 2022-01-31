@@ -11,12 +11,22 @@ const Navbar = ({ title }) => {
   const container = useRef(null);
   const linksContainer = useRef(null);
 
+
   
   useEffect(() => {
     const linksContainerHeight =
       linksContainer.current.getBoundingClientRect().height;
     // console.log(linksContainerHeight);
     setLinksContainerHeight(linksContainerHeight);
+    // =======
+    //   return (
+    //     <nav className='bg-black z-50 p-2'>
+    //       <div className=' w-10/12 mx-auto py-6 lg:hidden'>
+    //         <div className={`flex   items-center justify-between  `}>
+    //           <div className='flex  items-center '>
+    //             <h1 className='text-2xl font-semibold'>{title}</h1>
+    //           </div>
+    // >>>>>>> master
 
     if (scrollHeight >= 20) {
       setIsNavbarFixed(true);
@@ -92,6 +102,7 @@ const Navbar = ({ title }) => {
             </Link>
           </li>
 
+
           <li className="text-base   cursor-pointer">
             <Link to="/event" className="">
               Event
@@ -100,6 +111,7 @@ const Navbar = ({ title }) => {
           <li className="text-base  cursor-pointer">
             <Link to="/speakers" className="">
               Speakers
+
             </Link>
           </li>
           <li className="text-base   cursor-pointer">
@@ -107,9 +119,11 @@ const Navbar = ({ title }) => {
               Schedule
             </Link>
           </li>
+
           <li className="text-base   cursor-pointer">
             <Link to="/pricing" className="">
               Pricing
+
             </Link>
           </li>
           <li className="text-base   cursor-pointer">
@@ -117,6 +131,7 @@ const Navbar = ({ title }) => {
               Blog
             </Link>
           </li>
+
           <li className="text-base   cursor-pointer">
             <Link to="/contact" className="">
               Contact
@@ -127,6 +142,7 @@ const Navbar = ({ title }) => {
               <FaShoppingCart />
             </Link>
           </li>
+
         </ul>
       </div>
       <div className="relative bg-white z-50 w-10/12 mx-auto max-w-screen lg:hidden ">

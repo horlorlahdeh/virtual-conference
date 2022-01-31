@@ -3,6 +3,7 @@ import Button from "./Button/Button";
 
 const Date = () => {
     return (
+
         <section className="bg-black  ">
             <div className="flex  flex-col lg:grid lg:grid-cols-3 justify-between gap-y-8 gap-x-10 mx-auto w-10/12 lg:w-9/12 max-w-screen ">
                 <div className="bg-home-pink bg-home1 bg-home bg-cover py-10 lg:pb-28 px-4 lg:px-10  ">
@@ -37,6 +38,7 @@ const Date = () => {
             </div>
         </section>
     )
+
 }
 
 export default Date

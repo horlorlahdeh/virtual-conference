@@ -1,5 +1,6 @@
+const defaultTheme = require('tailwindcss/defaultTheme');
 module.exports = {
-  purge: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
+  purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
@@ -28,21 +29,31 @@ module.exports = {
         speakersHero: "url('../src/images/speakers/speaker-hero.png')",
         speakersSignUp: "url('../src/images/speakers/sign.png')",
         speakersJuly: "url('../src/images/speakers/july.png')",
-        homeHeroBg: "url('../src/images/home_hero_bg.jpg')"
+        homeHeroBg: "url('../src/images/home_hero_bg.jpg')",
+        shapesHomeImg: "url('../src/images/shapes-home-img.jpg')",
+        homeColorBg: "url('../src/images/home-color-bg.png')",
+        screens: {
+          xs: '350px',
+          ...defaultTheme.screens,
+        },
       },
       backgroundColor: (theme) => ({
-        ...theme("colors"),
-        "purple-main": "#6700FF",
-        "purple-light": "#9046FE",
-        "pink-main": "#ff6af0",
-        "sky-blue-pricing": "#03B6F8",
-        "yellow-light-pricing": "#FFF022",
-        "home-pink": "#ff6af0",
-        "home-blue": "#6700FF",
-        "home-yellow": "#fff022",
-      }),
-      borderColor: theme => ({
         ...theme('colors'),
+        'purple-main': '#6700FF',
+        'purple-light': '#9046FE',
+        'pink-main': '#ff6af0',
+        'sky-blue-pricing': '#03B6F8',
+        'yellow-light-pricing': '#FFF022',
+        'home-pink': '#ff6af0',
+        'home-blue': '#6700FF',
+        'home-yellow': '#fff022',
+        'home-red': '#FB3800',
+        'home-gradient-bg':
+          'radial-gradient(circle, rgba(0,0,0), rgba(0,0,0, 0.5), rgba(0,0,0,0.7))',
+      }),
+      borderColor: (theme) => ({
+        ...theme('colors'),
+
          DEFAULT: theme('colors.gray.300', 'currentColor'),
          "purple-main": '#6700FF' ,
         "purple-light": '#9046FE',
@@ -61,6 +72,7 @@ module.exports = {
         "pricing-brown": "#facdcd",
         "contact-gray": "#4e4e4e",
       }
+
     },
   },
   variants: {
