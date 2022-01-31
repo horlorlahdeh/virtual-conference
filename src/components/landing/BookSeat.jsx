@@ -1,7 +1,14 @@
-import React from "react";
+import React,{useState} from "react";
 import { FaArrowRight } from "react-icons/fa";
 
 const BookSeat = () => {
+  const [wfull, setWfull] = useState(false);
+  const handleMouseOver = () => {
+    setWfull(true);
+  };
+  const handleMouseLeave = () => {
+    setWfull(false);
+  };
   return (
     <section className=" bg-transparent py-20 ">
       <div className="w-10/12 max-w-screen  mx-auto">
@@ -17,16 +24,26 @@ const BookSeat = () => {
               </div>
             </div>
             <div className="flex flex-col">
-              <div className="flex flex-row items-end  mb-10 gap-x-4  relative">
-                <h5 className="capitalize mt-6 inline-block md:text-3xl lg:text-5xl font-semibold  lg:w-7/12  lg:text-left">
+              <div className="flex flex-row  justify-between gap-x-4   mb-10 ">
+                <h5 className=" capitalize mt-6 inline-block md:text-3xl lg:text-5xl font-semibold  lg:w-7/12  lg:text-left">
                   Earlybird Pricing Ends June 14th
                 </h5>
-                <div className="absolute top-0 right-0 bg-home-yellow inline-block p-4 md:p-8 lg:p-10 text-black  hover:px-12 cursor-pointer ">
-                  {/* <Button text="hello"/> */}
-                  <button>
-                    <FaArrowRight />
-                  </button>
-                </div>
+                <div className=" w-3/12 lg:w-4/12 ">
+              <div
+                onMouseOver={handleMouseOver}
+                onMouseLeave={handleMouseLeave}
+                className={`${
+                  wfull
+                    ? "w-full ml-auto transit flex items-center justify-center bg-home-yellow  p-4 md:p-10  text-black   cursor-pointer  "
+                    : "text-center flex items-center justify-center w-7/12 lg:w-9/12 bg-home-yellow  p-4 md:p-10  text-black   cursor-pointer transit  ml-auto "
+                }`}
+              >
+                {/* <Button text="hello"/> */}
+                <button className="text-center flex items-center justify-center ">
+                  <FaArrowRight className=" text-2xl " />
+                </button>
+              </div>
+            </div>
               </div>
               <p className="md:text-lg">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

@@ -1,6 +1,6 @@
 import React from "react";
-import Button from "./Button/Button";
-import Button2 from "./Button/Button2";
+// import Button from "./Button/Button";
+// import Button2 from "./Button/Button2";
 
 const Hero = () => {
   return (
