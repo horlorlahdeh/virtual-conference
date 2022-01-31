@@ -6,12 +6,13 @@ import Register from '../components/Register';
 import Sponsors from '../components/Sponsors';
 import Virtual from '../components/about/Virtual';
 import VirtualBottom from '../components/about/VirtualBottom';
-import Layout from '../components/Layout';
+// import Layout from '../components/Layout';
+import Navbar from '../components/Navbar';
 
 const About = () => {
   return (
     <div>
-      <Layout title='About Us'>
+      <Navbar title="About us"/>
         <Hero />
         <Virtual />
         <VirtualBottom />
@@ -19,9 +20,18 @@ const About = () => {
         <Faq />
         <Sponsors />
         <Register />
-      </Layout>
+      
+      {/* <Layout title='About Us'>
+        <Hero />
+        <Virtual />
+        <VirtualBottom />
+        <EventOrganisers />
+        <Faq />
+        <Sponsors />
+        <Register />
+      </Layout> */}
     </div>
   );
-};
+}; 
 
 export default About;

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState} from "react";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
 const Singlequestion = ({qstn}) => {

@@ -1,12 +1,20 @@
 import React from "react";
 import Button from "./Button/Button";
 
+
 const Hero = () => {
   return (
+// <<<<<<< final-2
+//     <section className="pt-14 py-20 lg:pt-16 bg-black text-white bg-shapesAbout bg-cover bg-center bg-no-repeat">
+//       <div className="flex  flex-col lg:flex-row items-start md:mt-14 w-10/12 max-w-screen mx-auto">
+//         <h1 className="z-10 text-4xl md:text-6xl lg:text-9xl lg:flex-1 font-semibold mb-8">
+//           About the event
+// =======
     <section className='pt-14 py-20 bg-black text-white bg-shapesAbout bg-cover bg-center bg-no-repeat'>
       <div className='flex  flex-col lg:flex-row items-start md:mt-14 w-10/12 max-w-screen mx-auto'>
         <h1 className='z-10 text-4xl md:text-6xl lg:text-9xl lg:flex-1 font-bold mb-12'>
           About Dygycon
+
         </h1>
         <div className='z-10 flex flex-col items-start lg:w-5/12 lg:pl-20   '>
           <p className='z-10 mb-8 mt-2 lg:text-xl lg:w-12/12 '>
@@ -14,7 +22,9 @@ const Hero = () => {
             collaborated opportunities as a partner of Splinterlands? Set up an
             appointment here or email Sarah at sarah@splinterlands.com.
           </p>
+
           <Button text='save your seat' />
+
         </div>
       </div>
     </section>

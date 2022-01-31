@@ -56,6 +56,20 @@ const Register = () => {
             </button>
           </div>
         </div>
+        <div className="flex-1 pt-48 pb-20 px-12 bg-white bg-shapesRegisterSm bg-no-repeat bg-right-top z-10">
+          <h1 className="text-black font-semibold text-lg md:text-3xl lg:text-5xl lg:w-10/12 mb-8 z-20 lg:font-normal tracking-widest">
+            Join our newsletter
+          </h1>
+          <div className="flex border-b-2 overflow-hidden border-black mb-4">
+            <form action="" className=" w-full">
+
+            <input placeholder="Email" type="text" className="flex-1 ml-4 bg-none z-10 p-4 font-bold text-black focus:border-none w-full" />
+            </form>
+          </div>
+          <button className="bg-black text-white w-full py-4 capitalize text-lg">subscribe</button>
+        
+        </div>
+
       </div>
     </section>
   );

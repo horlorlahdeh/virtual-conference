@@ -1,13 +1,14 @@
 import React, { Fragment } from 'react';
 import Navbar from './Navbar';
 
-const Layout = ({ children }) => {
+const Layout = ({ children,title }) => {
   return (
     <Fragment>
-      <Navbar />
+      <Navbar title={title} />
       <main>{children}</main>
     </Fragment>
   );
 };
 
 export default Layout;
+ 

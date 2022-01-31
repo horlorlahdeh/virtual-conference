@@ -1,7 +1,18 @@
-import React from 'react';
-import { FaArrowRight } from 'react-icons/fa';
+
+import React, { useState } from "react";
+import { FaArrowRight } from "react-icons/fa";
+// import Button from "../pricing/Button/Button";
+
 
 const Hero = () => {
+  const [wfull, setWfull] = useState(false);
+  const handleMouseOver = () => {
+    setWfull(true);
+  };
+  const handleMouseLeave = () => {
+    setWfull(false);
+  };
+  // console.log(wfull);
   return (
     <section className='text-white  py-0 lg:py-0 bg-black  lg:bg-homeHeroBg-- bg-cover  bg-no-repeat bg-center bg-pos flex justify-center align-center xs:h-screen'>
       <div className='background-blend-multiply w-full bg-gradient-to-r from-black via-transparent to-black'>
@@ -37,6 +48,7 @@ const Hero = () => {
               </button>
             </div>
           </div>
+
         </div>
       </div>
     </section>

@@ -8,15 +8,26 @@
 .show {
   display: flex;
 }
+.links-container {
+  height: 0;
+  overflow: hidden;
+  transition:  all 0.3s linear
+}
+.show-container {
+  height: 10rem;
+}
 .border-b-links {
   border-bottom: 0.1px solid rgb(203, 206, 204);
   transition: all 0.5s;
 }
-.border-t {
-  border-top: 2px solid rgb(114, 167, 236);
+.border-t-nav {
+  border-top: 1px solid rgb(114, 167, 236);
 }
-.ul-nav {
-  transition: all ease-in;
+.transit {
+  transition: all 0.5s linear;
+}
+.links-height{
+  height: 401px;
 }
 .max-w-screen {
   max-width: 1100px;
@@ -27,7 +38,14 @@
 .max-w-h-screen2 {
   max-width: 580px;
 }
-.mb-zero {
+
+.max-w-screen-speakers {
+  max-width: 850px;
+}
+.max-w-screen-landing {
+  max-width: 700px;
+}
+.mb-zero{
   margin-bottom: 0 !important;
 }
 .mt-zero {
@@ -153,7 +171,20 @@
   background-position-x: center;
   background-position-y: bottom;
 }
-.bg-pos {
+
+.bg-center-top{
+  background-position-x: center;
+    background-position-y: top;
+}
+.bg-pos{
   background-position: 50%;
   /* background-size: 100%; */
 }
+.bg-pos-pricing{
+  background-position-x: 50%;
+  background-position-y: center;
+}
+.h-speakers{
+  height: 40rem !important;
+}
+

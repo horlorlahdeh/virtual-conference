@@ -1,0 +1,25 @@
+.button-landingpage  {
+  width: 170px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight:500;
+  padding-left: .8rem;
+}
+
+
+.button-landingpage span {
+  opacity: 0;
+  transition: 200ms;
+  transform: translate(-1.2vh);
+  font-weight:500
+}
+
+
+.button-landingpage:hover span {
+  padding-left: 10px;
+  opacity: 1;
+  transform: translate(-0.7);
+}

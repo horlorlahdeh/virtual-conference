@@ -2,7 +2,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <section className="bg-black py-20 ">
+    <section className="bg-black py-20 lg:pt-40 ">
       <div className="w-10/12 mx-auto flex flex-col lg:flex-row lg:gap-12 lg:items-start">
         <div className=" p-1 mb-8 lg:mb-0 lg:w-4/12 lg:mt-4">
           <img src="./images/event/hero.png" alt="hero" />
