@@ -1,8 +1,6 @@
-
-import React, { useState } from "react";
-import { FaArrowRight } from "react-icons/fa";
+import React, { useState } from 'react';
+import { FaArrowRight } from 'react-icons/fa';
 // import Button from "../pricing/Button/Button";
-
 
 const Hero = () => {
   const [wfull, setWfull] = useState(false);
@@ -27,7 +25,7 @@ const Hero = () => {
                   DYGY CON
                 </h1>
                 <h1 className='capitalize text-2xl md:text-6xl lg:text-6xl mb-4'>
-                  edition 7.0
+                  edition 9
                 </h1>
                 <p className='md:text-lg'>
                   DYGYCON is a one-stop event showicasing all your favourite
@@ -43,12 +41,15 @@ const Hero = () => {
               </h5>
             </div>
             <div className='bg-home-yellow inline-block p-4 md:p-8 lg:p-10 text-black  hover:px-12 hover:bg-green-200 '>
-              <button>
+              <a
+                href='https://tinyurl.com/dygycon9'
+                rel='noreferrer'
+                target='_blank'
+              >
                 <FaArrowRight />
-              </button>
+              </a>
             </div>
           </div>
-
         </div>
       </div>
     </section>

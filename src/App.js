@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Home from './pages/Home'
+import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Event from './pages/Event';
@@ -11,7 +11,7 @@ import Blog from './pages/Blog';
 import Landing from './pages/Landing';
 
 import Register from './pages/Register';
-
+import Template from './pages/Template';
 
 function App() {
   return (
@@ -30,7 +30,7 @@ function App() {
           <Route exact path='/blog' component={Blog} />
 
           <Route exact path='/register' component={Register} />
-
+          <Route exact path='/*' component={Template} />
         </Switch>
       </Router>
     </div>

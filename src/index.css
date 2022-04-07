@@ -5,13 +5,16 @@
 .hide {
   display: none;
 }
+nav {
+  padding: 20px 30px;
+}
 .show {
   display: flex;
 }
 .links-container {
   height: 0;
   overflow: hidden;
-  transition:  all 0.3s linear
+  transition: all 0.3s linear;
 }
 .show-container {
   height: 10rem;
@@ -26,7 +29,7 @@
 .transit {
   transition: all 0.5s linear;
 }
-.links-height{
+.links-height {
   height: 401px;
 }
 .max-w-screen {
@@ -45,7 +48,7 @@
 .max-w-screen-landing {
   max-width: 700px;
 }
-.mb-zero{
+.mb-zero {
   margin-bottom: 0 !important;
 }
 .mt-zero {
@@ -95,7 +98,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 7.4rem;
+  height: 5.4rem;
   background-image: linear-gradient(
     180deg,
     transparent,
@@ -172,19 +175,24 @@
   background-position-y: bottom;
 }
 
-.bg-center-top{
+.bg-center-top {
   background-position-x: center;
-    background-position-y: top;
+  background-position-y: top;
 }
-.bg-pos{
+.bg-pos {
   background-position: 50%;
   /* background-size: 100%; */
 }
-.bg-pos-pricing{
+.bg-pos-pricing {
   background-position-x: 50%;
   background-position-y: center;
 }
-.h-speakers{
+.h-speakers {
   height: 40rem !important;
 }
 
+@media screen and (min-width: 800px) {
+  nav {
+    padding: unset;
+  }
+}

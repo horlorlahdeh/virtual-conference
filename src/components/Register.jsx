@@ -1,14 +1,13 @@
-import React from "react";
+import React from 'react';
 import {
   FaChevronRight,
   FaFacebookF,
   FaInstagram,
   FaLinkedin,
   FaTwitter,
-} from "react-icons/fa";
+} from 'react-icons/fa';
 
 const Register = () => {
-  
   return (
     <section
       className='bg-purple-main bg-shapesRegisterMain bg-center bg-no-repeat'
@@ -56,7 +55,7 @@ const Register = () => {
             </button>
           </div>
         </div>
-        <div className="flex-1 pt-48 pb-20 px-12 bg-white bg-shapesRegisterSm bg-no-repeat bg-right-top z-10">
+        {/* <div className="flex-1 pt-48 pb-20 px-12 bg-white bg-shapesRegisterSm bg-no-repeat bg-right-top z-10">
           <h1 className="text-black font-semibold text-lg md:text-3xl lg:text-5xl lg:w-10/12 mb-8 z-20 lg:font-normal tracking-widest">
             Join our newsletter
           </h1>
@@ -68,8 +67,7 @@ const Register = () => {
           </div>
           <button className="bg-black text-white w-full py-4 capitalize text-lg">subscribe</button>
         
-        </div>
-
+        </div> */}
       </div>
     </section>
   );
