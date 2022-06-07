@@ -52,7 +52,7 @@ const Navbar = ({ title }) => {
         className={`${
           isNavbarFixed
             ? 'py-4  w-10/12 lg:w-11/12 mx-auto  flex items-center justify-between'
-            : 'py-6  w-10/12 lg:w-11/12 mx-auto  flex items-center justify-between'
+            : 'py-4  w-10/12 lg:w-11/12 mx-auto  flex items-center justify-between'
         }`}
       >
         <h1 className='text-2xl font-semibold capitalize lg:hidden'>{title}</h1>

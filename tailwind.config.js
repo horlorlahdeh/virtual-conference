@@ -13,7 +13,7 @@ module.exports = {
         shapesRegisterSm: "url('../src/images/shapes-register-sm.png')",
         shapesBlog: "url('../src/images/blog/shapes-blog.png')",
         shapesBlog2: "url('../src/images/blog/blog-2.png')",
-        shapesPricing: "url('../src/images/pricing/pricing-bg.png')",
+        shapesPricing2: "url('../src/images/pricing/pricing-bg.png')",
         pricingBg2: "url('../src/images/pricing/pricing-bg-2.png')",
         pricingBg3: "url('../src/images/pricing/pricing-bg-3.png')",
         landingBgMain: "url('../src/images/landing/landing-bg-main.png')",
@@ -54,29 +54,27 @@ module.exports = {
       borderColor: (theme) => ({
         ...theme('colors'),
 
-         DEFAULT: theme('colors.gray.300', 'currentColor'),
-         "purple-main": '#6700FF' ,
-        "purple-light": '#9046FE',
-        "pink-main": "#ff6af0",
-        "home-yellow": "#fff022",
-        "home-blue": "#6700FF",
-        "home-pink": "#ff6af0",
-        "contact-gray": "rgba(255,255,255,0.2)",
-
-       }),
-       colors: {
-        "home-yellow": "#fff022",
-        "schedule-pink": "#FF6AF0",
-        "schedule-red": "#FB3800",
-        "schedule-yellow": "#FFF022",
-        "pricing-brown": "#facdcd",
-        "contact-gray": "#4e4e4e",
-      }
-
+        DEFAULT: theme('colors.gray.300', 'currentColor'),
+        'purple-main': '#6700FF',
+        'purple-light': '#9046FE',
+        'pink-main': '#ff6af0',
+        'home-yellow': '#fff022',
+        'home-blue': '#6700FF',
+        'home-pink': '#ff6af0',
+        'contact-gray': 'rgba(255,255,255,0.2)',
+      }),
+      colors: {
+        'home-yellow': '#fff022',
+        'schedule-pink': '#FF6AF0',
+        'schedule-red': '#FB3800',
+        'schedule-yellow': '#FFF022',
+        'pricing-brown': '#facdcd',
+        'contact-gray': '#4e4e4e',
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 };

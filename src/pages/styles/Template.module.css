@@ -1,0 +1,25 @@
+.blog_post_h1 {
+  text-align: center;
+}
+
+iframe {
+  margin: auto !important;
+}
+figcaption {
+  text-align: center;
+}
+p {
+  width: 80%;
+  margin: auto;
+}
+
+table {
+  margin: auto;
+  border: 1px solid white;
+}
+td,
+tr,
+thead,
+tbody {
+  border: 1px solid white;
+}
