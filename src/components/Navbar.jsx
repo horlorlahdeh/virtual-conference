@@ -111,6 +111,11 @@ const Navbar = ({ title }) => {
               Contact
             </Link>
           </li>
+          <li className='text-base   cursor-pointer'>
+            <Link to='/error' className=''>
+              Error
+            </Link>
+          </li>
           {routes.map((route, index) => {
             const { name, path } = route;
             return (
@@ -119,7 +124,7 @@ const Navbar = ({ title }) => {
                   {name}
                 </Link>
               </li>
-            );
+            ); 
           })}
           {/* <li className='text-base   cursor-pointer'>
             <Link to='/schedule' className=''>
@@ -210,6 +215,11 @@ const Navbar = ({ title }) => {
             <li className='text-base border-b flex transition-all duration-600 hover:bg-gray-50  cursor-pointer'>
               <Link to='/contact' className='py-2 pl-8  w-full'>
                 Contact
+              </Link>
+            </li>
+            <li className='text-base border-b flex transition-all duration-600 hover:bg-gray-50  cursor-pointer'>
+              <Link to='/error' className='py-2 pl-8  w-full'>
+                Error
               </Link>
             </li>
           </ul>

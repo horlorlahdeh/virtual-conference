@@ -190,7 +190,9 @@ nav {
 .h-speakers {
   height: 40rem !important;
 }
-
+.h-95{
+  height: 86vh;
+}
 @media screen and (min-width: 800px) {
   nav {
     padding: unset;
