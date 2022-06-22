@@ -3,15 +3,15 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Event from './pages/Event';
-import Pricing from './pages/Pricing';
+import Speakers from './pages/Speakers';
 
 import Schedule from './pages/Schedule';
-import Speakers from './pages/Speakers';
 import Blog from './pages/Blog';
 import Landing from './pages/Landing';
-
+import Pricing from './pages/Pricing';
 import Register from './pages/Register';
 import Template from './pages/Template';
+import Error from './pages/Error';
 
 function App() {
   return (
@@ -20,16 +20,16 @@ function App() {
         <Switch>
           <Route exact path='/' component={Home} />
           <Route exact path='/about' component={About} />
-          <Route exact path='/landing' component={Landing} />
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/event' component={Event} />
-          <Route exact path='/pricing' component={Pricing} />
-
-          <Route exact path='/schedule' component={Schedule} />
           <Route exact path='/speakers' component={Speakers} />
-          <Route exact path='/blog' component={Blog} />
 
+          <Route exact path='/landing' component={Landing} />
+          <Route exact path='/schedule' component={Schedule} />
+          <Route exact path='/blog' component={Blog} />
+          <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/register' component={Register} />
+          <Route exact path='/error' component={Error} />
           <Route exact path='/*' component={Template} />
         </Switch>
       </Router>
