@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { eventOrganizers } from '../data';
 import SpeakerItem from './SpeakerItem';
 import axios from '../utils/axios';
 
@@ -16,8 +15,8 @@ const EventOrganisers = () => {
         Event Speakers
       </h1>
       <div className='grid grid-cols-2 lg:grid-cols-4  gap-y-8 w-10/12 mx-auto max-w-screen'>
-        {eventOrganizers.map((organizer, index) => (
-          <SpeakerItem key={index} organizer={organizer} />
+        {speakers.map((speaker, index) => (
+          <SpeakerItem key={index} speaker={speaker} />
         ))}
       </div>
     </section>

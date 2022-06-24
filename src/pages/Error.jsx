@@ -1,11 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Button from "../components/Button/Button";
 import Layout from "../components/Layout";
 
 const Error = () => {
   return (
     <Layout>
-      <div className="bg-black  bg-fixed bg-shapesContact bg-cover bg-center bg-no-repeat pt-1">
+      <section className="bg-black  bg-fixed bg-shapesContact bg-cover bg-center bg-no-repeat pt-1">
         <div className="px-4 md:px-14 md:pt-6 lg:pt-2 lg:px-6 mt-4  ">
           <div className="flex flex-col gap-y-6 lg:w-10/12 mx-auto">
             <section className=" w-full h-95   rounded  shadow-sm flex flex-col lg:flex-row lg:items-center lg:justify-between lg:px-20 ">
@@ -30,14 +31,18 @@ const Error = () => {
                   The link you followed is either inaccurate, has been removed
                   or the server has been instructed not to let you have it
                 </p>
-                <button className="bg-white text-black py-4 px-4 rounded-sm capitalize text-lg font-bold">
-                  <Link to="/">go back home</Link>
-                </button>
+                <Link to="/">
+                  <Button
+                    text="go back home"
+                    color="text-black"
+                    bgColor="bg-white"
+                  />
+                </Link>
               </div>
             </section>
           </div>
         </div>
-      </div>
+      </section>
     </Layout>
   );
 };

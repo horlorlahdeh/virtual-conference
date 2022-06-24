@@ -13,7 +13,7 @@ const Template = ({ match }) => {
   useEffect(() => {
     setLoading(true);
     axios.get(`/pages/${match.url}`).then((res) => {
-      console.log(JSON.parse(res.data.data.content))
+      // console.log(JSON.parse(res.data.data.content))
       if (!res.data.data) {
         return;
       }
