@@ -11,7 +11,7 @@ import Landing from './pages/Landing';
 import Pricing from './pages/Pricing';
 import Register from './pages/Register';
 import Template from './pages/Template';
-import Error from './pages/Error';
+import Error from './pages/Error'; 
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
       <Router>
         <Switch>
           <Route exact path='/' component={Home} />
-          <Route exact path='/about' component={About} />
+          <Route exact path='/about' component={About} /> 
           <Route exact path='/contact' component={Contact} />
           <Route exact path='/event' component={Event} />
           <Route exact path='/speakers' component={Speakers} />

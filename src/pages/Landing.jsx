@@ -11,13 +11,13 @@ import News from "../components/landing/News";
 
 const Landing = () => {
   return (
-    <div>
+    <div> 
       <Navbar title="Virtual Conference Pricing" />
       <div className=" bg-black text-white bg-landingBgMain bg-fixed bg-cover bg-center-top bg-no-repeat">
         <Hero />
         <Date />
-        <Info />
-        <Join/>
+        <Info /> 
+        <Join/> 
         <Dates/>
         <BookSeat/>
         <News/>

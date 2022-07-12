@@ -1,24 +1,25 @@
 import React, { useState } from 'react';
 import { FaMinus, FaPlus } from 'react-icons/fa';
 
-const Singlequestion = () => {
+const Question = ({qstn,ans}) => {
   const [text, setText] = useState(false);
   const handleText = (e) => {
     setText(!text);
   };
   return (
     <article
-      className={`${
+      className={`mb-6 transition-all duration-1000 ${
         text ? 'bg-pink-400 text-black' : ''
-      } mb-6 transition-all duration-1000`}
+      } `}
     >
+      {/* qstn */}
       <div
         className={`question-title flex justify-between items-center p-2   ${
-          text ? 'text-black' : 'border-8 border-pink-400 text-pink-400'
+          text ? 'text-black' : 'text-pink-400 border-8 border-pink-400 '
         }`}
       >
         <p className='text-xl font-bold'>
-          Duis aute irure dolor in reprehenderit?
+          {qstn}
         </p>
         <button type='button' className='question-btn'>
           <span className='plus-icon'>
@@ -33,15 +34,14 @@ const Singlequestion = () => {
           </span>
         </button>
       </div>
-      {/* question text  */}
+      {/* ans  */}
       <div className={` p-2   ${text ? 'show' : 'hide'}`}>
         <p>
-          Sed ut perspiciatis, unde omnis iste natus error sit voluptatem
-          accusantium doloremque laudantium, totam rem aperiam eaque ipsa.
+          {ans}
         </p>
       </div>
     </article>
   );
 };
 
-export default Singlequestion;
+export default Question;

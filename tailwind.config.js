@@ -37,7 +37,7 @@ module.exports = {
           ...defaultTheme.screens,
         },
       },
-      backgroundColor: (theme) => ({
+      backgroundColor: (theme) => ({ 
         ...theme('colors'),
         'purple-main': '#6700FF',
         'purple-light': '#9046FE',

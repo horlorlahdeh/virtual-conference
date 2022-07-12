@@ -10,7 +10,7 @@ const methods = {
         ? `<div class="blog_caption">
                                 <p>${obj.data.caption}</p>
                             </div>`
-        : '';
+        : "";
       return `<div class="blog_image">
                                 <img src="${obj.data.file.url}" alt="${obj.data.caption}"/>
                                 ${caption}
@@ -52,19 +52,19 @@ const methods = {
       // </section>	`
     },
     makeList(obj) {
-      if (obj.data.style === 'unordered') {
+      if (obj.data.style === "unordered") {
         const list = obj.data.items.map((item) => {
           return `<li>${item}</li>`;
         });
         return `<ul class="blog_post_ul">
-                            ${list.join('')}
+                            ${list.join("")}
                         </ul>`;
       } else {
         const list = obj.data.items.map((item) => {
           return `<li>${item}</li>`;
         });
         return `<ul class="blog_post_ul">
-                            ${list.join('')}
+                            ${list.join("")}
                         </ul>`;
       }
     },
@@ -101,7 +101,7 @@ const methods = {
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8">
                     <div class="table_top_sec">
-                        ${list.join('')}
+                        ${list.join("")}
                     </div>
                 </div>
             </div>

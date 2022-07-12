@@ -12,7 +12,7 @@ const Posts = () => {
               alt="blog-1"
               className="  w-full h-full "
             />
-          </div>
+          </div> 
           <div className="p-4 md:pt-2">
             <h1 className=" capitalize mb-3 text-lg font-normal tracking-widest ">
               Nunc Volutpat Venenatis
