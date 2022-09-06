@@ -116,6 +116,11 @@ const Navbar = ({ title }) => {
               Error
             </Link>
           </li>
+          <li className='text-base   cursor-pointer'>
+            <Link to='/welcome-room' className=''>
+              Welcome Room
+            </Link>
+          </li>
           {routes.map((route, index) => {
             const { name, path } = route;
             return (
@@ -220,6 +225,11 @@ const Navbar = ({ title }) => {
             <li className='text-base border-b flex transition-all duration-600 hover:bg-gray-50  cursor-pointer'>
               <Link to='/error' className='py-2 pl-8  w-full'>
                 Error
+              </Link>
+            </li>
+            <li className='text-base border-b flex transition-all duration-600 hover:bg-gray-50  cursor-pointer'>
+              <Link to='/welcome-room' className='py-2 pl-8  w-full'>
+                Welcome room
               </Link>
             </li>
           </ul>

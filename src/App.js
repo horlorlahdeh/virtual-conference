@@ -12,6 +12,7 @@ import Pricing from './pages/Pricing';
 import Register from './pages/Register';
 import Template from './pages/Template';
 import Error from './pages/Error'; 
+import WelcomeRoom from './pages/WelcomeRoom'; 
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
           <Route exact path='/pricing' component={Pricing} />
           <Route exact path='/register' component={Register} />
           <Route exact path='/error' component={Error} />
+          <Route exact path='/welcome-room' component={WelcomeRoom} />
           <Route exact path='/*' component={Template} />
         </Switch>
       </Router>
