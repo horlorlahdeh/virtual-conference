@@ -16,7 +16,7 @@ const About = () => {
       setSponsors(res.data.data);
       console.log(sponsors);
     });
-  }, []);
+  }, [sponsors]);
   return (
     <Layout title="about us">
       <section className="pt-14 py-20 bg-black text-white bg-shapesAbout bg-cover bg-center bg-no-repeat">

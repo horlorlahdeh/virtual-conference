@@ -1,5 +1,5 @@
 import "./Button.css";
-import {FaCaretRight} from'react-icons/fa'
+// import {FaCaretRight} from'react-icons/fa'
 
 const Button = ({text,bgColor,color,border,borderColor,bgColorHover,colorHover}) => {
   return (

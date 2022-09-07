@@ -13,6 +13,7 @@ import Register from './pages/Register';
 import Template from './pages/Template';
 import Error from './pages/Error'; 
 import WelcomeRoom from './pages/WelcomeRoom'; 
+import ExhibitHalls from './pages/ExhibitHalls'; 
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route exact path='/register' component={Register} />
           <Route exact path='/error' component={Error} />
           <Route exact path='/welcome-room' component={WelcomeRoom} />
+          <Route exact path='/exhibit-halls' component={ExhibitHalls} />
           <Route exact path='/*' component={Template} />
         </Switch>
       </Router>

@@ -7,7 +7,7 @@ import img4 from "../images/welcome-room/splinterland-booth.jpg";
 import img5 from "../images/welcome-room/community-lounge.jpg";
 import img6 from "../images/welcome-room/tailgate.jpg";
 import img7 from "../images/welcome-room/chat-areas.jpg";
-import img8 from "../images/welcome-room/photo-booth.webp";
+import img8 from "../images/welcome-room/photo-booth.webp"; 
 import img9 from "../images/welcome-room/exhibit-halls.webp";
 import img10 from "../images/welcome-room/swag-booth.webp";
 import img11 from "../images/welcome-room/presentation-room.jpg";
@@ -119,7 +119,7 @@ const WelcomeRoom = () => {
                 </p>
               </div>
               <div className="">
-                <img src={img8} alt="photo booth" className="mb-7" />
+                <img src={img8} alt=" booth" className="mb-7" />
                 <h5 className="mb-7 w-full text-xl capitalize">photo booth</h5>
                 <p className="w-full mb-6">
                 Select sponsors that confirm PLATINUM booths or purchase a logo slot will get displayed on a photo backdrop area with red carpet.
