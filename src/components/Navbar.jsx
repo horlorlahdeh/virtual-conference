@@ -126,6 +126,16 @@ const Navbar = ({ title }) => {
               Exhibit Halls
             </Link>
           </li>
+          <li className='text-base   cursor-pointer'>
+            <Link to='/presentation-room' className=''>
+              presentation room
+            </Link>
+          </li>
+          <li className='text-base   cursor-pointer'>
+            <Link to='/community-lounge' className=''>
+              community lounge
+            </Link>
+          </li>
           {routes.map((route, index) => {
             const { name, path } = route;
             return (
@@ -240,6 +250,16 @@ const Navbar = ({ title }) => {
             <li className='text-base border-b flex transition-all duration-600 hover:bg-gray-50  cursor-pointer'>
               <Link to='/exhibit-halls' className='py-2 pl-8  w-full'>
                 Exhibit halls
+              </Link>
+            </li>
+            <li className='text-base border-b flex transition-all duration-600 hover:bg-gray-50  cursor-pointer'>
+              <Link to='/presentation-room' className='py-2 pl-8  w-full'>
+                presentation room
+              </Link>
+            </li>
+            <li className='text-base border-b flex transition-all duration-600 hover:bg-gray-50  cursor-pointer'>
+              <Link to='/community lounge' className='py-2 pl-8  w-full'>
+                community lounge
               </Link>
             </li>
           </ul>

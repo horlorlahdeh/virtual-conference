@@ -14,6 +14,8 @@ import Template from './pages/Template';
 import Error from './pages/Error'; 
 import WelcomeRoom from './pages/WelcomeRoom'; 
 import ExhibitHalls from './pages/ExhibitHalls'; 
+import PresentationRoom from './pages/PresentationRoom'; 
+import CommunityLounge from './pages/CommunityLounge';
 
 function App() {
   return (
@@ -34,6 +36,8 @@ function App() {
           <Route exact path='/error' component={Error} />
           <Route exact path='/welcome-room' component={WelcomeRoom} />
           <Route exact path='/exhibit-halls' component={ExhibitHalls} />
+          <Route exact path='/presentation-room' component={PresentationRoom} />
+          <Route exact path='/community-lounge' component={CommunityLounge} />
           <Route exact path='/*' component={Template} />
         </Switch>
       </Router>

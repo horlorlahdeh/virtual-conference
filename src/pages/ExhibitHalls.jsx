@@ -20,7 +20,7 @@ import img16 from "../images/exhibit-halls/sandbox.webp";
 const ExhibitHalls = () => {
   return (
     <section className="">
-      <Navbar title="welcome room" />
+      <Navbar title="exhibit halls" />
       <main className="bg-black text-white px-6">
         <section className=" max-w-screen-xl lg:px-10 mx-auto flex flex-col items-center lg:items-start justify-center py-32">
           <div className="pt-48 sm:pt-28 lg:  ">
