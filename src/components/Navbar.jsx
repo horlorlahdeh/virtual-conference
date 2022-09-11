@@ -136,6 +136,11 @@ const Navbar = ({ title }) => {
               community lounge
             </Link>
           </li>
+          <li className='text-base   cursor-pointer'>
+            <Link to='/brand-kit' className=''>
+              Brand kit
+            </Link>
+          </li>
           {routes.map((route, index) => {
             const { name, path } = route;
             return (
@@ -258,8 +263,13 @@ const Navbar = ({ title }) => {
               </Link>
             </li>
             <li className='text-base border-b flex transition-all duration-600 hover:bg-gray-50  cursor-pointer'>
-              <Link to='/community lounge' className='py-2 pl-8  w-full'>
+              <Link to='/community-lounge' className='py-2 pl-8  w-full'>
                 community lounge
+              </Link>
+            </li>
+            <li className='text-base border-b flex transition-all duration-600 hover:bg-gray-50  cursor-pointer'>
+              <Link to='/brand-kit' className='py-2 pl-8  w-full'>
+                Brand kit
               </Link>
             </li>
           </ul>

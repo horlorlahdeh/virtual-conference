@@ -236,7 +236,7 @@ const ExhibitHalls = () => {
                 <p className="w-full mb-6 text-lg leading-6">
                   There are 5 sets of rows for booths to be placed inside any of
                   the 8 Halls. Each set can hold 1 PLATINUM or 2 DIAMOND or 3
-                  GOLD booths.{" "}
+                  GOLD booths.
                 </p>
               </div>
             </div>

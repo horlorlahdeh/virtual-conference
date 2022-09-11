@@ -16,6 +16,7 @@ import WelcomeRoom from './pages/WelcomeRoom';
 import ExhibitHalls from './pages/ExhibitHalls'; 
 import PresentationRoom from './pages/PresentationRoom'; 
 import CommunityLounge from './pages/CommunityLounge';
+import BrandKit from './pages/BrandKit';
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
           <Route exact path='/exhibit-halls' component={ExhibitHalls} />
           <Route exact path='/presentation-room' component={PresentationRoom} />
           <Route exact path='/community-lounge' component={CommunityLounge} />
+          <Route exact path='/brand-kit' component={BrandKit} />
           <Route exact path='/*' component={Template} />
         </Switch>
       </Router>
